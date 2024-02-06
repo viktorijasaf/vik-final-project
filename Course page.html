@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+   
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Webinar Registration</h1>
+    <link rel="stylesheet" href="CSS/main.CSS">
+    <script src="Vik scripts.js"></script>
+</head>
+<body>
+    <header>
+        <p>When: 24 Nov, 2024</p>
+        <p>Hour: 11:00 AM</p>
+    </header>
+    <section id="main-content">
+        <div class="webinar-info">  
+            <h1>Your Webinar on Content Creation</h1>
+            <p>Unlock the art of captivating content creation in our exclusive webinar—where creativity meets strategy, and your message becomes a masterpiece.Step into the dynamic world of content creation with our exclusive webinar that bridges the gap between creativity and strategy. This is not just another session; it's a gateway to mastering the art of content that not only captivates but converts.
+                Discover the secrets to crafting compelling content that resonates with your audience. Learn how to weave the threads of creativity into the fabric of digital strategy, and watch your ideas come alive.</p>
+                
+                <div id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-time" id="days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-time" id="hours">08</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-time" id="minutes">33</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-time" id="seconds">45</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+                
+                <section id="learn More">
+                    <!-- Content of the section goes here -->
+                </section>
+                <a href="#what-you-learn" class="button">Learn More</a>
+                
+        </div>
+        <div class="webinar-interactive">
+            <div class="webinar-video">
+                <!-- Placeholder for the video, replace with your actual video -->
+                <video width="640" height="360" controls>
+                    <source src="Video/pexels-ivan-samkov-7677005 (Original).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="registration-form">
+                <form id="registrationForm">
+                    <input type="text" id="name" name="name" placeholder="John Klein" required>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    <input type="password" id="password" name="password" placeholder="Password (8 characters minimum)" minlength="8" required>
+                    <button type="submit">REGISTER NOW</button>
+                </form>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+    
+    <section id="webinar-schedule">
+        <h2>Webinar Schedule</h2>
+        <div class="schedule-container">
+            <div class="schedule-item" onclick="toggleDescription('desc1')">
+                <span class="schedule-time">11:00 AM</span>
+                <span class="schedule-text">INTRODUCTION</span>
+            </div>
+            <div id="desc1" class="schedule-description" style="display:none;">
+                Brief introduction to the webinar and what to expect.
+            </div>
+    
+            <div class="schedule-item" onclick="toggleDescription('desc2')">
+                <span class="schedule-time">11:20 AM</span>
+                <span class="schedule-text">CONTENT STRATEGIES</span>
+            </div>
+            <div id="desc2" class="schedule-description" style="display:none;">
+                Discussion on developing effective content strategies for your brand.
+            </div>
+    
+            <div class="schedule-item" onclick="toggleDescription('desc3')">
+                <span class="schedule-time">12:00 PM</span>
+                <span class="schedule-text">VISUAL STORYTELLING</span>
+            </div>
+            <div id="desc3" class="schedule-description" style="display:none;">
+                Exploring the power of visual storytelling and its impact.
+            </div>
+    
+            <!-- Additional schedule items and their descriptions here -->
+        </div>
+    </section>
+    
+    
+    
+    
+
+
+    <section id="what-you-learn">
+        <h2>What Will You Learn?</h2>
+        <div class="learn-items">
+            <div class="learn-item">
+                <img src="Images/Bulb.png" alt="Bulb Icon">
+                <h3>Storytelling</h3>
+                <p>Discover the art of crafting narratives that resonate with your audience, fostering a deeper connection and engagement.</p>
+            </div>
+            <div class="learn-item">
+                <img src="Images/Phone.png" alt="Phone Icon">
+                <h3>Visual</h3>
+                <p>Learn the techniques to create visually stunning graphics and videos that leave a lasting impact and enhance your brand presence.</p>
+            </div>
+            <div class="learn-item">
+                <img src="Images/Clapper.png" alt="Clapper Icon">
+                <h3>Editing</h3>
+                <p>Art of video editing, gaining hands-on skills to transform raw footage into compelling stories that captivate and engage your audience.</p>
+            </div>
+       
+
+         <!-- Speakers and people -->
+    </section>
+    <section id="speakers">
+        <h2>Webinar Speakers</h2>
+<div class="speaker">
+    <img src="Images/pexels-ivan-samkov-7676503.jpg" style="width: 130px; height: 200px;" alt="Katrina Robertson">
+    <h3>Katrina Robertson</h3>
+    <p>TikTok creator - Lize</p>
+    <!-- Social Icons -->
+    <a href="https://www.tiktok.com/" target="_blank">
+        <img src="Images/Tiktok.jpg" alt="TikTok" style="width: 45px; height: 45px;">
+    </a>
+    <a href="https://www.linkedin.com" target="_blank">
+        <img src="Images/Linkedin.jpg" alt="Instagram" style="width: 24px; height: 24px;">
+    </a>
+</div>
+<div class="speaker">
+    <img src="Images/pexels-mirco-violent-blur-4033244.jpg" style="width: 130px; height: 200px;" alt="Harvey Pierce">
+    <h3>Harvey Pierce</h3>
+    <p>CTO at SilvrStripe Productions</p>
+    <!-- Social Icons -->
+    <a href="https://www.tiktok.com/" target="_blank">
+        <img src="Images/Tiktok.jpg" alt="TikTok" style="width: 45px; height: 45px;">
+    </a>
+    <a href="https://www.linkedin.com" target="_blank">
+        <img src="Images/Linkedin.jpg" alt="Instagram" style="width: 24px; height: 24px;">
+    </a>
+</div>
+
+            <!-- Page footer -->
+        </div>
+    </section>
+    <footer>
+        <p>Terms of Service | Privacy Policy</p>
+        <p>&copy; 2024 Safonova Socials </p>
+    </footer>
+</body>
+</html>
+
+

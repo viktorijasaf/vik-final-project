@@ -1,0 +1,408 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1e89e7;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header {
+    background-color: #000000;
+    color: #1e89e7;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.webinar-info {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.countdown-time {
+    background-color: #333;
+    color: #fff;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 65px;
+    text-align: center;
+}
+
+.countdown-label {
+    color: #999;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+#main-content h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 0.5em;
+    text-align: center;
+    clear: both;
+}
+
+.button {
+    display: inline-block;
+    background-color: #b70336;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(91, 1, 56);
+}
+
+button {
+    background-color: #b70336;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    button:hover 
+        background-color: rgb(91, 1, 56);
+}
+
+.webinar-interactive {
+    display: block;
+    margin: 0 auto;
+    padding: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+.registration-form form {
+    width: 100%;
+    max-width: 620px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"],
+.registration-form input[type="submit"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #b70336;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(91, 1, 56);
+}
+
+.schedule-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.schedule-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.schedule-item:last-child {
+    border-bottom: none;
+}
+
+.schedule-time {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    color: #1e89e7;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.schedule-text {
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.schedule-time:hover {
+    background-color: #1e89e7;
+    color: #ffffff;
+    cursor: pointer;
+}
+.schedule-description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #000;
+    border-radius: 5px;
+    display: none; /* Initial state is hidden, JavaScript will toggle this */
+}
+
+
+.webinar-video {
+    margin: 20px auto;
+    padding: 0;
+    max-width: 640px;
+    height: auto;
+
+    
+}
+
+.webinar-video video {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.webinar-interactive::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    header, .webinar-interactive {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.learn-items {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.learn-item {
+    flex-basis: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.learn-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
+
+.learn-item h3 {
+    margin: 0.5em 0;
+}
+
+.learn-item p {
+    font-size: 1em;
+}
+
+#speakers {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.speaker {
+    display: inline-block;
+    margin: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.speaker img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    object-fit: cover;
+    margin: 10px;
+}
+
+  
+
+.speaker h3, .speaker p {
+    margin: 5px 0;
+    display: none;
+}
+
+.speaker:hover h3, .speaker:hover p {
+    display: block;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+#speakers {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.speaker {
+    display: inline-block;
+    margin: 40px;
+    position: relative;
+    cursor: pointer;
+    text-align: left; /* Align the text to the left for the speaker details */
+    width: 200px; /* Set a specific width to contain the speaker's info and icons */
+}
+
+.speaker img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto; /* Center the image */
+}
+
+.speaker h3, .speaker p {
+    margin: 5px 0;
+    text-align: center; /* Center the text for the name and description */
+}
+
+/* Ensure h3 and p are always visible, remove the display: none; */
+.speaker h3, .speaker p {
+    animation: fadeIn 0.3s;
+}
+
+/* Social icons container */
+.speaker .social-icons {
+    display: flex;
+    justify-content: center; /* Center the social icons container */
+    margin-top: 10px; /* Add some space between the description and icons */
+}
+
+/* Individual social icons */
+.social-icon {
+    width: 24px; /* Standardize icon width */
+    height: 24px; /* Standardize icon height */
+    margin: 0 5px; /* Add some space around the icons */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
+
+
+@media (max-width: 768px) {
+    .learn-items,
+    .timeline-event,
+    .webinar-speakers {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .learn-item,
+    .timeline-event,
+    .speaker {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+
+    .timeline-event::before {
+        display: none;
+    }
+}
+
